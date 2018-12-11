@@ -1,3 +1,6 @@
 node_modules
 package-lock.json
 logs/
+zookeeper1/data/
+zookeeper2/data/
+zookeeper3/data/
