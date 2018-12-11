@@ -7,6 +7,8 @@
 # client.sh
 启动ZKCli的脚本
 
+ZKCli的操作见，该文件注释
+
 # deploy.sh
 本机部署ZK伪集群
 
