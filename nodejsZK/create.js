@@ -36,7 +36,7 @@ client.once('connected', async function () {
   setTimeout(async () => {
     await client.close();
     console.log('Node: 连接已关闭');
-  }, 5 * 1000)
+  }, 10 * 1000)
 });
 
 client.connect();

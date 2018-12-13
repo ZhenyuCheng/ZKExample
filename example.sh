@@ -6,14 +6,14 @@ ZKCli：
     get /root
 
 2. set(更新) node set.js -p path -a acls -d data
-脚本：更新数据和权限为所有人都有读和删除权限
-    node set.js -p /root -d 根节点 -a ADMIN:world:anyone -a DELETE:world:anyone
+脚本：更新数据和权限为所有人都有更改ACL和删除权限
+    node set.js -p /root -a ADMIN:world:anyone -a DE
+    LETE:world:anyone
 ZKCli： 无权限会失败
     get /root 
     
-
 脚本：更新权限和数据为本机IP有所有权限
-    node set.js -p /root -d 根节点 -a ALL:ip:127.0.0.1  // 该IP有所有权限
+    node set.js -p /root -a ALL:ip:127.0.0.1  // 该IP有所有权限
 ZKCli： 成功
     get /root
 
