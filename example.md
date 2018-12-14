@@ -1,21 +1,20 @@
 1. 列出ZkCLi的操作：h
 2. create(注册)：
 脚本：
-    node create.js /root 根节点 e
+   ` node create.js /root 根节点 e`
 ZKCli：
-    get /root
+    `get /root`
 
 2. set(更新) node set.js -p path -a acls -d data
 脚本：更新数据和权限为所有人都有更改ACL和删除权限
-    node set.js -p /root -a ADMIN:world:anyone -a DE
-    LETE:world:anyone
+    `node set.js -p /root -a ADMIN:world:anyone -a DELETE:world:anyone`
 ZKCli： 无权限会失败
-    get /root 
+    `get /root`
     
 脚本：更新权限和数据为本机IP有所有权限
-    node set.js -p /root -a ALL:ip:127.0.0.1  // 该IP有所有权限
+    `node set.js -p /root -a ALL:ip:127.0.0.1`  // 该IP有所有权限
 ZKCli： 成功
-    get /root
+    `get /root`
 
 
 3. get(发现) node get.js path (同时设置了watch)
