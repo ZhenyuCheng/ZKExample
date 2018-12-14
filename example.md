@@ -21,8 +21,9 @@
     
    - 脚本：更新权限和数据为本机IP有所有权限
        ```
+       // 该IP有所有权限
        node set.js -p /root -a ALL:ip:127.0.0.1
-       ```  // 该IP有所有权限
+       ```  
    - ZKCli： 成功
        ```
        get /root
